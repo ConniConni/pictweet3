@@ -33,7 +33,7 @@ class TweetsController < ApplicationController
   end
 
   def search
-    @tweets = SearchTweetsService.search(params[:keyword])
+    @tweets = Tweet.search(params[:keyword])
   end
 
   private
