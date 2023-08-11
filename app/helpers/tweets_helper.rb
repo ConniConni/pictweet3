@@ -5,4 +5,5 @@ module TweetsHelper
       html += render(partial: 'tweet',locals: { tweet: tweet })
     end
     return raw(html)
+  end
 end
